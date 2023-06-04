@@ -1,0 +1,69 @@
+/*    _____                         _     
+____ |_   _|                       | |    
+/ __ \ | |    __ _  _ __  ___  _   _ | |__  
+/ / _` || | / _` || '__|/ __|| | | || '_ \ 
+| | (_| || || (_| || |  | (__ | |_| || |_) |
+\ \__,_|\_/ \__,_||_|   \___| \__, ||_.__/ 
+\____/                        __/ |       
+                            |___/    */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,body{
+height: 100%;
+}
+
+.main{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 20px;
+    color: rgb(60, 60, 60);
+}
+.select, .score{
+    text-align: center;
+}
+
+.select span{
+    width: 180px;
+    height: 100px;
+    display: inline-block;
+    cursor: pointer;
+}
+.ekt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #ff0000;
+    width: 153px;
+    position: absolute;
+    z-index: 99999;
+    color: #fff;
+    border-radius: 10px;
+    right: 856px;
+    top: 490px;
+    padding: 3px;
+}
+.select .paper{
+    background: url('imags/paper.png') center / cover;
+}
+
+.select .rock{
+    background: url('imags/rock.png') center / cover;
+}
+.select .scissor{
+    background: url('imags/scissor.png') center / cover;
+}
